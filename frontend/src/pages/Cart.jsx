@@ -70,12 +70,14 @@ function Cart() {
               </div>
             ))}
           </div>
-
+        <div className="cartTotal">
+        
           <h2>Total: ₹{total}</h2>
 
           <button onClick={handlePayment} className="proceedButton" >
             Proceed to Payment
           </button>
+        </div>
         </>
       )}
     </div>

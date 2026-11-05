@@ -48,14 +48,11 @@ function Navbar() {
           </Link>
 
           {token ? (
-            <button
-              className="loginLogoutBtn"
-              onClick={handleLogout}
-            >
+            <button className="navButton" onClick={handleLogout}>
               Logout
             </button>
           ) : (
-            <Link to="/login" className="loginLogoutBtn">
+            <Link to="/login" className="navButton">
               Login
             </Link>
           )}
